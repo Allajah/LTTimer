@@ -1,0 +1,38 @@
+html{
+margin: 0 auto;
+height: 100%;
+}
+
+span.timer_font {
+    font-size:100px;
+    color:#ff3333;
+    font-family: "7barP";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -150px;
+
+}
+body{
+  background-color:#151515;
+  }
+input#start_button{
+  font-size: 30px;
+  background-color: #248;
+  color: #fff;
+  border-style: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+input#stop_button{
+  font-size: 30px;
+  background-color: #248;
+  color: #fff;
+  border-style: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+

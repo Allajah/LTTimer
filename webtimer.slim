@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title LT-Timer
+    script src="./js/timer.js" type="text/javascript"
+    link rel="stylesheet" type="text/css" href="./css/timer_style.css"
+    audio id ="dora" 
+      source src="./audio/dora.mp3"
+  body
+    span class="timer_font"
+      div id="countdown"
+      input type="button" value="Start" onclick="Timer();" id="start_button"
+      input type="button" value="Stop" id="stop_button" 
