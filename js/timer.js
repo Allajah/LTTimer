@@ -1,6 +1,9 @@
-  second=0; 
-  minute=5;
-  minisecond=0;
+S=0;
+M=5;
+MS=0;
+second=S; 
+  minute=M;
+  minisecond=MS;
 function Timer(){
  
   timerID=setInterval(function(){
@@ -35,4 +38,17 @@ function dispAlert(){
 
 function Stop(){
 clearInterval(timerID);
+}
+
+function Reset(){
+  clearInterval(timerID);
+  second=S;
+  minute=M;
+  minisecond=MS;
+  minisecString = (minisecond<10)?"0"+minisecond : minisecond;
+  minuteString = (minute<10)?"0"+minute : minute;
+  secondString = (second<10)?"0"+second : second;
+  remainingtime=minuteString + ":" + secondString + ":" + minisecString;
+
+  document.getElementById("countdown").innerText=remainingtime
 }
