@@ -19,8 +19,10 @@ function Timer(){
     minuteString = (minute<10)?"0"+minute : minute;
     secondString = (second<10)?"0"+second : second;
     if(interval==10) {
-      remainingtime=minuteString + ":" + secondString + ":" + minisecString;
+      //if your want to display minisec, add '+":"+ minisecString'
+      remainingtime=minuteString + ":" + secondString;
     }else if(interval==1000) {
+      //if your want to display minisec, add '+":"+ minisecString'
       remainingtime=minuteString + ":" + secondString;
     }
     document.getElementById("countdown").innerText=remainingtime;
@@ -55,7 +57,8 @@ function Reset(){
   minisecString = (minisecond<10)?"0"+minisecond : minisecond;
   minuteString = (minute<10)?"0"+minute : minute;
   secondString = (second<10)?"0"+second : second;
-  remainingtime=minuteString + ":" + secondString + ":" + minisecString;
+  //if your want to display minisec, add '+":"+ minisecString'
+  remainingtime=minuteString + ":" + secondString;
 
   document.getElementById("countdown").innerText=remainingtime
 }
